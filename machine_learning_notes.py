@@ -274,5 +274,8 @@ ax.barh(np.arange(10), data.sepal_width.iloc[:10])
 
 import seaborn as sns
 
-sns.joinplot(x='sepal_length',y='sepal_width', data=data, size=4)
+sns.jointplot(x='sepal_length',y='sepal_width', data=data, size=4)
+
+
+sns.pairplot(data, hue='species', size=3)
 # %%
